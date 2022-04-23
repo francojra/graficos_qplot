@@ -12,3 +12,16 @@ library(tidyverse)
 ### Função qplot()
 ### Banco de dados, variáveis x e y
 ### Geometria: tipo de gráfico
+
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
+
+iris
+
+# Gráficos ---------------------------------------------------------------------------------------------------------------------------------
+
+### Uma dimensão
+
+qplot(x = Petal.Length, data = iris)
+qplot(x = Petal.Length, data = iris, geom = "histogram") # Produz mesmo gráfico.
+qplot(x = Petal.Length, data = iris, binwidth = 0.1) # Considera as observações como 0.1, espaço entre uma observação e outra.
+qplot(x = Petal.Length, data = iris, geom = "bar") # Frequência de cada valor, no histograma é uma faixa de valores.

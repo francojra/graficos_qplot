@@ -25,3 +25,6 @@ qplot(x = Petal.Length, data = iris)
 qplot(x = Petal.Length, data = iris, geom = "histogram") # Produz mesmo gráfico.
 qplot(x = Petal.Length, data = iris, binwidth = 0.1) # Considera as observações como 0.1, espaço entre uma observação e outra.
 qplot(x = Petal.Length, data = iris, geom = "bar") # Frequência de cada valor, no histograma é uma faixa de valores.
+qplot(x = Species, data = iris) # Como o x não é numérico, o padrão gera um gráfico de barras.
+
+### Duas dimensões
